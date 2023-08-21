@@ -6,6 +6,9 @@
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
     </head>
     <body>
         <div class ="container">
@@ -22,15 +25,16 @@
                     <option value="German">German</option>
                     <option value="French">French</option>
                 </select>
-                <p class ="icons">Notifications Icon</p>
-                <p class ="icons">Settings Icon</p>
-                <p class ="icons">User Pic</p>
-                <p class ="icons">Username</p>
-                
+                <img class="icons" id="notifications" src="https://www.svgrepo.com/show/496445/notification.svg">
+                <img class="icons" id="settings" src="https://www.svgrepo.com/show/433145/settings-alt.svg">
+                <div id="user">
+                  <img class="icons" id="userPic" src="https://www.svgrepo.com/show/335611/profile-default.svg">
+                <p class="icons">User</p>
+                </div>
             </div>
             <div id="sidebar">
                 <div class="sidebar-row1">
-                    <h2>Dashboard</h2>
+                    <h3><img id="dashboard" src="https://www.svgrepo.com/show/433037/dashboard-vert.svg"> Dashboard</h3>
                     <p>Home</p>
                     <p>Profile</p>
                     <p>Messages</p>
@@ -44,18 +48,27 @@
                 </div>
             </div>
             <div id="main">  
+                <h2>Overview</h2>
                 <div class ="all-projects">
-                    <h2>Overview</h2>
-                    <h3>My Projects</h3>
+                    <h3 style="text-align: center">My Projects</h3>
                     <div class="projects-grid">
-                        <div class="project">Calculator</div>
-                        <div class="project">Rock Paper Scissors</div>
-                        <div class="project">Etch-a-Sketch</div>
+                        <div class="project">
+                          <img id="calculator" src="https://www.svgrepo.com/show/484107/calculator-part-2.svg">
+                          <span>Calculator</span>
+                        </div>
+                        <div class="project">
+                          <img id="RPS" src="https://www.svgrepo.com/show/474381/game.svg">
+                          <span>Rock Paper Scissors</span>
+                        </div>
+                        <div class="project">
+                          <img id="paint" src="https://www.svgrepo.com/show/475356/drawing-board.svg">
+                          <span>Etch-a-Sketch</span>
+                        </div>
                     </div>
                 </div>
                 <div class ="total-sales">
                     <h2>Total Sales This Month</h2>
-                    <img src="/References/Images/line-graph.svg" class ="pie-graph">
+                    <img id = "graph" src="https://raw.githubusercontent.com/Nari07/Admin-Dashboard/89e4df78c252ab56cc6037b363b5b91de4bb9912/References/Images/line-graph.svg" class ="pie-graph">
                     <!-- <div class="graph-item"> 🟦 Direct</div>
                     <div class="graph-item"> 🟩 Affiliate</div>
                     <div class="graph-item"> 🟥 Sponsored</div> -->
